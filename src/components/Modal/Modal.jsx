@@ -1,4 +1,3 @@
-
 import { Component } from 'react';
 import { createPortal } from 'react-dom';
 import css from './Modal.module.css';
@@ -40,21 +39,8 @@ export class Modal extends Component {
   }
 }
 
-
-
-
-// export const Modal = ({ src, alt, handleClose }) => (
-
-  
-//   <div className={css.Overlay} onClick={handleClose}>
-//     <div className={css.Modal}>
-//       <img src={src} alt={alt} />
-//     </div>
-//   </div>
-// );
-
 Modal.propTypes = {
   src: propTypes.string.isRequired,
   alt: propTypes.string.isRequired,
-  handleClose: propTypes.func.isRequired,
+  closeModal: propTypes.func.isRequired,
 };

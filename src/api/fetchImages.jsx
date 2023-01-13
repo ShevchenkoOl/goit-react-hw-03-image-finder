@@ -10,7 +10,7 @@ export const notifySettings = {
   borderRadius: '12px',
 };
 
-export async function fetchImages(searchQuery, page) {
+export async function fetchData(searchQuery, page) {
   const API_KEY = '30790248-497145c5d3b0c6576ca9c953f';
 
   const searchParams = new URLSearchParams({
@@ -28,7 +28,7 @@ export async function fetchImages(searchQuery, page) {
   const response = await axios.get(url);
   if (response.status === 404) {
     Notiflix.Notify.failure(
-      'К сожелению ничего не найдено, поробуйте ещё раз',
+      'Oops, no pics found. Please try again',
       notifySettings
     );
     return Promise.reject();
