@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Notiflix from 'notiflix';
 
-import { fetchData, notifySettings } from '../API/fetchImages';
-import { Searchbar } from './Searchbar/Searchbar';
-import { ImageGallery } from './ImageGallery/ImageGallery';
-import { Loader } from './Loader/Loader';
-import { Modal } from './Modal/Modal';
-import { Button } from './Button/Button';
+import { fetchData, notifySettings } from './API/fetchImages';
+import { Searchbar } from './components/Searchbar/Searchbar';
+import { ImageGallery } from './components/ImageGallery/ImageGallery';
+import { Loader } from './components/Loader/Loader';
+import { Modal } from './components/Modal/Modal';
+import { Button } from './components/Button/Button';
 
 
 export class App extends Component {
