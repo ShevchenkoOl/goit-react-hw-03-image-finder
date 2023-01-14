@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Notiflix from 'notiflix';
 
-import { fetchData, notifySettings } from './Api/FetchImages';
+import { fetchData, notifySettings } from './Api/Api';
 import { Searchbar } from './components/Searchbar/Searchbar';
 import { ImageGallery } from './components/ImageGallery/ImageGallery';
 import { Loader } from './components/Loader/Loader';
