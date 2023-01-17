@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import css from './Searchbar.module.css';
+import Notiflix from 'notiflix';
+import { notifySettings } from 'Api/Api';
 
 export class Searchbar extends Component {
   state = {
@@ -19,8 +21,27 @@ export class Searchbar extends Component {
     this.setState({ query: '' });
     
     
+    if (this.state.query === event) 
+    {
+      return Notiflix.Notify.success(
+        `Вы уже просматриваете ${this.state.query}.`,
+       notifySettings
+      );
+    }
+// this.setState({query:event.toLowerCase(), pics:[], page:1})
+    
 }
-
+   
+// handleSubmit = event => {
+// if (this.state.query === event) 
+//     {
+//       return Notiflix.Notify.success(
+//         `Вы уже просматриваете ${this.state.query}.`,
+//        notifySettings
+//       );
+//     }
+// this.setState({query:event.toLowerCase(), pics:[], page:1})
+//   }
   render() {
     return (
       <header className={css.Searchbar}>
