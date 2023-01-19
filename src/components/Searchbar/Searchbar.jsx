@@ -21,7 +21,7 @@ export class Searchbar extends Component {
     this.setState({ query: '' });
     
     
-    if (this.state.query === event) 
+    if (this.setState === event) 
     {
       return Notiflix.Notify.success(
         `Вы уже просматриваете ${this.state.query}.`,
