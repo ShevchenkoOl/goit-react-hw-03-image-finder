@@ -57,13 +57,7 @@ export class App extends Component {
             picsArr: [...prevState.picsArr, ...picsArr],
           }));
         }
-    //     if (picsArr === query) 
-    // {
-    //   Notiflix.Notify.success(
-    //     `Вы уже просматриваете ${query}.`,
-    //    notifySettings
-    //   );
-    // }
+   
   this.setState({name: query.toLowerCase(), pics:[], page: 1})
         
         if (picsArr.length > 0 && this.state.page === 1) {

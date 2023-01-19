@@ -28,7 +28,7 @@ export class Searchbar extends Component {
        notifySettings
       );
     }
-// this.setState({query:event.toLowerCase(), pics:[], page:1})
+this.setState({query:event.toLowerCase(), pics:[], page:1})
     
 }
    
